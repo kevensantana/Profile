@@ -16,7 +16,7 @@
 <body>
 
   <header>
-    <nav data-menu="suave">
+    <nav class="nav" data-menu="suave">
         <p><a href="#home">&lsaquo;KS/&rsaquo;</a></p>
         <button data-menu="button" aria-controls="menu"></button>
       <ul data-menu="list" id="menu">
@@ -30,6 +30,7 @@
   </header>
 
   <main>
+    <!-- Principal - home  -->
     <section class="principal" id="home" >
       <div class="principal-left">
         <h1>Olá, eu sou</h1>
@@ -39,7 +40,7 @@
         <div class="container-botao">
           <a href="https://www.linkedin.com/in/keven-santana-2aaa50165" target="_blank">
             <div class="button">
-              <img src="./assets/linkedin.png" alt="" />
+              <img src="./assets/linkedin.png" alt="LinkedIn" />
               <p>LinkedIn</p>
             </div>
           </a>
@@ -61,34 +62,83 @@
           <img src="./assets/scroll.png" alt="Rolar para baixo">
         </a>
       </div>
-    </section>
+    </section> 
 
+    <!-- Sobre  -->
     <section class="sobre" id="sobre">
-      <div class="image-perfil">
-         <img src="https://avatars.githubusercontent.com/u/44447313?v=4" alt="Perfil - keven Santana">
-       </div>
-       <div class="descricao">
-         <h1>Sobre mim</h1>
-         <h2>Santo Amaro, Bahia</h2>
-         <p>Olá! Sou keven Santana, tenho 21 anos e atualmente estou aperfeiçoando minha carreira com dedicação nos estudos para  ser uma desenvolvedora fullstack. Uma trajetória em construção há mais de 5 anos, destinado a melhorar as minhas habilidades técnicas e pessoais, adaptando um avanço linear e construtivo para a minha carreira. Formado pelo Instituto de Ciencias e tecnologia - IFBA no tecnologo em informatica. Atuo no mercado como freelancer, oferecendo soluções completas para sistemas web.</p>
-          
+      <div class="container-sobre">
+        <div class="image-perfil">
+          <img src="https://avatars.githubusercontent.com/u/44447313?v=4" alt="Perfil - keven Santana">
+        </div>
+        <div class="descricao">
+          <h1>Sobre mim</h1>
+          <h2>Santo Amaro, Bahia</h2>
+          <p class="descricao-perfil">
+            Olá! Sou keven Santana, tenho 21 anos e atualmente estou aperfeiçoando minha carreira com dedicação nos
+            estudos para ser uma desenvolvedora fullstack. Uma trajetória em construção há mais de 5 anos, destinado a
+            melhorar as minhas habilidades técnicas e pessoais, adaptando um avanço linear e construtivo para a minha
+            carreira. Formado pelo Instituto de Ciencias e tecnologia - IFBA no tecnologo em informatica. Atuo no
+            mercado como freelancer, oferecendo soluções completas para sistemas web.
+          </p>
+
           <div class="container-botao-sobre">
             <a href="./assets/" download="">
               <div class="button">
-                <img src="./assets/download-cloud.png" alt="" />
+                <img src="./assets/download-cloud.png" alt="Currículo" />
                 <p>Currículo</p>
               </div>
             </a>
-            <a href="mailto: kevensantana40@gmail.com?subject=Keven, vim pelo seu portfólio! :" target="_blank" >
+            <a href="mailto: kevensantana40@gmail.com?subject=Keven, vim pelo seu portfólio! :" target="_blank">
               <div class="button">
-                <img src="./assets/mail.png" alt="" />
+                <img src="./assets/mail.png" alt="E-mail" />
                 <p>E-mail</p>
               </div>
             </a>
-          </div>   
+          </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Experiências -->
+    <section class="experiencia" id="experiencia">
+     <div class="container-exp">
+        <h1>Experiência</h1>
+        <div class="container-wrapper">
+          <section class="empresas">
+            <ul data-tab="menu">
+              <li>KingTech</li>
+              <li>TI.Net</li>
+              <li>Freelancer</li>
+            </ul>
+          </section>
+       
+
+          <div class="experiencia-descricao" data-tab="content">
+            <section data-anime="show-right">
+              <h2>Estagiário - Técnico em Informática</h2>
+              <span>Dez/2019 - Mar/2020</span>
+              <p class="exp-local">KingTech Informática | Santo Amaro</p>
+              <p class="exp-info">
+                Manutenção em computadores e notebooks, configuração de sistemas operacionais, manutenção preventiva,
+                configuração em redes internas, substituição e manutenção de equipamentos em racks, manutenção
+                especializada em placa mãe, além de realizar procedimentos de formatação e recuperação.
+              </p>
+            </section>
+
+            <section data-anime="">
+              <h2>Estagiário - Técnico em Informática</h2>
+              <span>Jul/2020 - Jan/2021</span>
+              <p class="exp-local">TI.Net | Santo Amaro</p>
+              <p class="exp-info">
+                Configuração em equipamento de redes, manutenção preventiva em computadores, atendimento aos clientes, suporte remoto e manutenção em equipamentos internos..
+              </p>
+            </section>
+          </div>
+         </div>
+     </div>
     </section>
   </main>
 
+  <script src="js/script.js"> </script>
 </body>
 </html> 

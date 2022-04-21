@@ -4,7 +4,7 @@ header {
   z-index: 100;
 }
 
-nav {
+.nav {
   padding: 0 10%;
   display: flex;
   align-items: center;
@@ -15,22 +15,22 @@ nav {
   transition: 0.3s;
 }
 
-nav.fixed {
+.nav.fixed {
   box-shadow: 0 4px 4px rgba(0,0,0,.3);
 }
 
-nav ul {
+.nav ul {
   display: flex;
   justify-content: end;
 }
 
-nav ul li {
+.nav ul li {
   list-style: none;
   margin: 10px 30px;
 
 }
 
-nav ul li::after {
+.nav ul li::after {
   content: "";
   display: block;
   border-bottom: 2px solid #00d2df;
@@ -39,22 +39,22 @@ nav ul li::after {
   transition: transform 0.3s ease;
 }
 
-nav ul li:hover::after {
+.nav ul li:hover::after {
   transform: scaleX(1);
 }
 
-nav p {
+.nav p {
   padding: 10px;
   font-size: 1.3rem;
   width: 100%;
 }
 
-nav p a {
+.nav p a {
   color: #00d2df;
   transition: 0.3s;
 }
 
-nav p a:hover {
+.nav p a:hover {
   color: rgba(147, 88, 247, 1);
 }
 
@@ -176,7 +176,14 @@ nav p a:hover {
 
 /* ======================== */
 
+/* sobre  */
 .sobre{
+
+  background: #151515;
+  padding: 20px;
+}
+
+.container-sobre{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -204,11 +211,12 @@ nav p a:hover {
 }
 
 .descricao{
-  width: 80%;
-  filter: opacity(75%);
-
+  width: 75%;
+  filter: opacity(100%);
 }
+
 .descricao p {
+  filter: opacity(75%);
   line-height: 1.5;
 }
 .container-botao-sobre{
@@ -216,4 +224,124 @@ nav p a:hover {
   width: 350px;
   justify-content: space-between;
   margin-top: 30px;
+  filter: opacity(100%);
+
+}
+
+
+/* ======================== */
+
+/* experiencia  */
+
+.experiencia{
+  padding: 4rem;
+
+}
+
+.container-exp {
+  width: 80vw;
+  margin: auto;
+  padding-left: 2rem ;
+}
+
+.container-wrapper {
+  display: flex;
+}
+
+.empresas{
+  width: 200px;
+  cursor: pointer;
+}
+
+.empresas ul {
+  list-style: none;
+  font-size: 1.1rem;
+  padding: 0;
+}
+
+.empresas ul li.active {
+  background-color: #151515;
+  border-left: 2px solid #00d2df;
+  font-weight: 600;
+}
+
+.empresas li {
+  padding: 10px;
+  border-left: 2px solid #272727;
+  transition: background-color 0.5s ease;
+}
+
+.empresas ul li:hover {
+  background-color: #272727;
+}
+
+
+.experiencia-descricao {
+
+  width: 60%;
+  margin-left: 5rem;
+  position: relative;
+  line-height: 1.5rem;
+}
+
+.experiencia-descricao section {
+  display: none;
+}
+
+.experiencia-descricao section.active {
+  display: block;
+}
+
+.experiencia-descricao section.active.show-right {
+  animation: 0.5s forwards show-right;
+}
+
+.experiencia-descricao h2 {
+  font-size: 1.4rem;
+  display: inline-block;
+}
+
+.experiencia-descricao span {
+  font-size: 0.95rem;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  font-weight: bold;
+  filter: opacity(75%);
+
+}
+
+.exp-local {
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  color: #00d2df !important;
+  font-weight: bold;
+}
+
+.exp-info p{
+  filter: opacity(75%);
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }
