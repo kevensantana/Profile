@@ -1,13 +1,13 @@
 #projetos{
     background: #151515;
-    margin-top: 5rem;
+
 }
 
 .projetos-container {
 
    width: 90%;
    margin: auto;
-   padding-top: 4rem;
+   padding-top: 5rem;
    padding-bottom: 4rem;
 }
 
@@ -26,7 +26,7 @@
 
 
 .text--medium {
-   font-size: 1rem;
+   font-size: 1.4rem;
    line-height: 1rem;
    font-weight: 400;
    color: #ecf0f1;
@@ -74,10 +74,11 @@
 }
 
 .title {
-   margin: 1rem 0;
-   font-size: 0.85rem;
+   margin: 2rem 0;
+   font-size: 1.6rem;
    color: #00d2df;
    font-weight: bold;
+
 }
 
 .info {
@@ -87,7 +88,7 @@
 }
 
 .info p {
-   font-size: 1rem;
+   font-size: 1.4rem;
 }
 
 .price {
@@ -115,15 +116,20 @@
     border-radius: 8px;
 
     font-weight: 600;
-    font-size: 0.95rem;
+    font-size: 1.2rem;
     letter-spacing: 1.5px;
 
     position: relative;
 
     transition: 0.3s;
+
+    border: 1px solid #151515;
 }
 
+.button-card:hover {
+   background: #1f1f1f;
 
+}
 
 .visible-box{
    width: 90%;

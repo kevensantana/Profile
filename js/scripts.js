@@ -18,14 +18,40 @@ typewrite(nome)
 
 //certificados
 
+
+const slides = document.querySelector("div.slides");
+const slideOne = document.querySelector("div.slideOne");
+
+const certificados = [
+  {img: "assets/image/certificados/cert01.png"},
+  {img: "assets/image/certificados/cert02.png"},
+  {img: "assets/image/certificados/cert03.png"},
+  {img: "assets/image/certificados/cert04.png"},
+  {img: "assets/image/certificados/cert05.png"},
+  {img: "assets/image/certificados/cert06.png"},
+  {img: "assets/image/certificados/cert07.png"},
+  {img: "assets/image/certificados/cert08.png"},
+];
+
+certificados.map(certificados => {
+  const slideClone = slideOne.cloneNode(true);
+  slideClone.querySelector("img").src = certificados.img;
+  slides.appendChild(slideClone);
+});
+
+slideOne.remove();
+
+
+
 var balls = document.querySelector('.balls')
-var qtd = document.querySelectorAll('.slides .slideImage')
+// var qtd = document.querySelectorAll('.slides .slideImage')
+var qtd = 2;
 var atual = 0;
 var slideImage = document.getElementById('atual')
 var proximo = document.getElementById('proximo')
 var voltar = document.getElementById('voltar')
 
-for(let i=2; i < qtd.length; i++){
+for(let i=1; i < qtd.length; i++){
   var div = document.createElement('div')
   div.id = i
   balls.appendChild(div)
@@ -61,7 +87,7 @@ function slide(){
     atual = qtd.length-1
   }
   document.querySelector('.slideAtual').classList.remove('slideAtual')
-  slideImage.style.marginLeft = -1170*atual+'px'
+  slideImage.style.marginLeft = -1170 * atual + 'px'
   document.getElementById(atual).classList.add('slideAtual')
 }
 
@@ -72,9 +98,7 @@ slide(0)
 
 //Ling
 const one = document.querySelector("div.container-one");
-const two= document.querySelector("div.container-two");
 const ling = document.querySelector("div.ling");
-const lingTwo = document.querySelector("div.lingTwo");
 
 const imagem = [
   {img: "assets/image/Ling/JS.png"},
@@ -87,16 +111,6 @@ const imagem = [
   {img: "assets/image/Ling/physics.png"},
   {img: "assets/image/Ling/node-js.png"},
   {img: "assets/image/Ling/mysql.png"},
-];
-
-imagem.map(imagem => {
-  const lingClone = ling.cloneNode(true);
-  lingClone.querySelector("img").src = imagem.img;
-  one.appendChild(lingClone);
-});
-
-
-const imagemTwo = [
   {img: "assets/image/Ling/typescript.png"},
   {img: "assets/image/Ling/figma.png"},
   {img: "assets/image/Ling/sass.png"},
@@ -105,23 +119,27 @@ const imagemTwo = [
   {img: "assets/image/Ling/ANGULAR.png"},
   {img: "assets/image/Ling/python.png"},
   {img: "assets/image/Ling/linux.png"},
-]
+];
 
-imagemTwo.map(imagemTwo => {
-  const lingClone2 = lingTwo.cloneNode(true);
-  lingClone2.querySelector("img").src = imagemTwo.img;
-  two.appendChild(lingClone2);
+imagem.map(imagem => {
+  const lingClone = ling.cloneNode(true);
+  lingClone.querySelector("img").src = imagem.img;
+  one.appendChild(lingClone);
 });
 
 ling.remove();
-lingTwo.remove();
 
 // ====================================================
+
+
+
 
 function leiaMais(){
   var verMais = document.getElementById("verMais")
   var maisTexto = document.getElementById("mais")
   var leiaMais = document.getElementById("leiaMais")
+
+  
 
   if(verMais.style.display === "none"){
       verMais.style.display = "inline";
@@ -130,7 +148,7 @@ function leiaMais(){
   } else{
       verMais.style.display = "none";
       maisTexto.style.display = "inline";
-      leiaMais.innerHTML = "...sa"
+      leiaMais.innerHTML = "..."
   }
 }
 

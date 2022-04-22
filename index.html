@@ -78,11 +78,12 @@
     <section id="sobre">
       <div class="container-sobre">
         <div class="image-perfil">
-          <img src="https://avatars.githubusercontent.com/u/44447313?v=4" alt="Perfil - keven Santana">
+          <!-- https://avatars.githubusercontent.com/u/44447313?v=4 -->
+          <img src="assets/image/Perfil.jpg" alt="Perfil - keven Santana">
         </div>
         <div class="descricao">
           <h1>Sobre mim</h1>
-          <h2>Santo Amaro, Bahia</h2>
+          <h2>Salvador, Bahia</h2>
           <p class="descricao-perfil">
               Olá! Sou keven Santana, tenho 21 anos e atualmente estou aperfeiçoando minha carreira com dedicação nos
               estudos para ser uma desenvolvedor fullstack.
@@ -113,7 +114,7 @@
 
     <!-- Experiências -->
     <section id="experiencia">
-     <div class="container-experiencia">
+     <div id="experiencia" class="container-experiencia">
         <h1>Experiência</h1>
         <div class="container-wrapper">
           <section class="empresas">
@@ -174,8 +175,8 @@
                 experiências com banco de dados SQL, Angularjs e Node.
               </p>
               <div class="container-button-ifba">
-                <a href="assets/docs/SSA Keven Santana - CV.pdf" download="" alt="Currículo">
-                  <div class="button">
+                <a href="projetos.html" alt="Currículo">
+                  <div class="button projetos-ifba">
                     <img src="./assets/image/icon/gerenciamento-de-projetos.png" alt="Currículo" />
                     <p>Projetos</p>
                   </div>
@@ -196,19 +197,9 @@
               <i class="fas fa-chevron-right"></i>
             </div>
               <div class="slides">
-                <div id="atual" class="slideImage">
-                  <img src="assets/image/certificados/cert01.png" alt="">
-                  <img src="assets/image/certificados/cert02.png" alt="">
-                  <img src="assets/image/certificados/cert03.png" alt="">
-                  <img src="assets/image/certificados/cert04.png" alt="">
+                <div id="atual" class="slideImage  slideOne">
+                  <img src="assets/image/certificados/cert01.png" alt="cert01">
                 </div>
-                <div class="slideImage">
-                  <img src="assets/image/certificados/cert05.png" alt="">
-                  <img src="assets/image/certificados/cert06.png" alt="">
-                  <img src="assets/image/certificados/cert07.png" alt="">
-                  <img src="assets/image/certificados/cert08.png" alt="">
-                </div>
-               
               </div>
 
               <div class="balls">
@@ -227,15 +218,9 @@
             <img src="assets/image/Ling/JS.png" alt="HTML">
           </div>
         </div>
-        <div class="container-two"> 
-          <div class="lingTwo">
-            <img src="assets/image/Ling/typescript.png" alt="typescript">
-          </div>
-        </div>
     </section>
 
     <section id="projetos">
-      <div class="deg"></div>
       <div class="projetos-container">
         <h1>Meus Projetos</h1>
         <div class="cards">
@@ -256,24 +241,26 @@
     </section>
 
     <section id="contato">
-    <div class="container-form">
       <h1>Contato</h1>
-      <form class="form-contato" action="https://formsubmit.co/kevensantana40@gmail.com" method="POST">
-        <h2>Vamos lá?!</h2>
-        <span>Preencha o formulário abaixo para iniciar contato</span>
-        <div class="form-input">
-          <input type="text" name="name" placeholder="Nome:" required>
-          <input type="email" name="email" placeholder="Email:" required>
-          <input type="text" name="assunto" placeholder="Assunto:">
-          <textarea type="text" name="messagem" placeholder="Mensagem:"></textarea>
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://kevensantana.github.io/Profile/">
-     
-          <button class="button-form" type="submit">Enviar</button>
-     
+        <div class="container-form">
+          <form class="form-contato" action="https://formsubmit.co/kevensantana40@gmail.com" method="POST">
+            <h2>Vamos lá?!</h2>
+            <span>Preencha o formulário abaixo para iniciar contato</span>
+            <div class="form-input">
+              <input type="text" name="name" placeholder="Nome:" required>
+              <input type="email" name="email" placeholder="Email:" required>
+              <input type="text" name="assunto" placeholder="Assunto:">
+              <textarea type="text" name="messagem" placeholder="Mensagem:"></textarea>
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next" value="https://kevensantana.github.io/Profile/">
+
+              <button class="button-form" type="submit">Enviar</button>
+            </div>
+          </form>
+          <div class="img-form-right">
+            <img src="./assets/image/ilus-code.svg" alt="Ilustração">
+          </div>
         </div>
-      </form>
-    </div>
     </section>
   </main>
     
@@ -281,8 +268,8 @@
 
     <footer>
       <div class="contato-bs">
-        <div>
-           <a href=""><img src="assets/image/icon/whatsapp.png" alt="Whatsapp"></a>
+        <div class="redes">
+           <a href="whatapp.com"><img src="assets/image/icon/whatsapp.png" alt="Whatsapp"></a>
            <a href=""><img src="assets/image/icon/telegram.png" alt="Telegram"></a>
            <a href=""><img src="assets/image/icon/discord.png" alt="Discord"></a>
         </div>

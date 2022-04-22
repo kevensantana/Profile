@@ -1,9 +1,15 @@
 
 /* Principal */
-@media (max-width: 880px) {
+@media (max-width: 800px) {
 
 
+    .img-form-right {
+        display: none;
+    }
 
+    .home-right {
+        display: none;
+    }
 }
 
 
@@ -15,6 +21,7 @@
     }
 
         /* home  */
+
 
 
     .container-home {
@@ -46,9 +53,7 @@
 
        /* sobre  */
 
-    .home-right {
-        display: none;
-    }
+  
 
     .scroll {
         width: 100%;
@@ -68,16 +73,20 @@
     .descricao{
         margin: 0;
     }
+    
 
      .descricao-perfil {
        text-align: justify;
         
     }
-    
+
     #mais {
         display: none;
     }
 
+    #verMais {
+        display: inline;
+    }
 
 
     #leiaMais {
@@ -110,6 +119,8 @@
        margin-bottom: 4rem;
    }
 
+   
+
    .ifba{
        display: flex;
        flex-direction: column;
@@ -126,7 +137,7 @@
    .info-ifba {
        margin: 0;
        width: 85%;
-
+ 
        padding-top: 3rem;
    }
 
@@ -137,13 +148,62 @@
         margin: auto;
    }
 
+    .slideImageMobi{
+        display: flex;
+    }
+
+   .container-one {
+       display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+       grid-gap: 15px;
+   }
+   
+   .ling img {
+       width: 4rem;
+       height: 4rem;
+
+       transition: all 0.3s ease 0s;
+   }
 
 
+
+   .title{
+        text-align: left;
+   }
+
+   #contato {
+       width: 100%;
+   }
+
+    .form-contato {
+        width: 85%;
+    }
+
+    .container-form {
+        display: block;
+    }
 
 }
 
 
 @media (max-width: 568px) {
+    .btn {
+        display: none;
+    }
+
+    .contato-bs {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        width: 80%;
+        margin: auto;
+    }
+
+    .redes img {
+        width: 3rem;
+        height: 3rem;
+    }
 
 }
 

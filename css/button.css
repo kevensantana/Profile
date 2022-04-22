@@ -58,12 +58,12 @@
   border: none;
 
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1.4rem;
   letter-spacing: 1.5px;
 
   position: relative;
 
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .button-form:hover{
@@ -90,7 +90,7 @@
 
   position: fixed;
   bottom: 1rem;
-  right: 1rem;
+  right: 2rem;
   width: 35px;
   height: 45px;
   background-color:black;
@@ -112,7 +112,12 @@
 }
 
 
+.projetos-ifba img{
+    width: 2rem;
+    height: 2rem;
+    filter: opacity(75%);
 
+}
 
 
 

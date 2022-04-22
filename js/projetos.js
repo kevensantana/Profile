@@ -11,12 +11,29 @@ const projetos = [{
     projeto_id: "01"
   },
   {
+    title: "DoctorCare",
+    autor: "Keven Santana",
+    status: "NLW#8",
+    thumb: "assets/image/projetos/doctorCare.jpg",
+    link: "",
+    projeto_id: "02"
+
+  }, {
+    title: "Feedback Widget",
+    autor: "Keven Santana",
+    status: "NLW#8",
+    thumb: "assets/image/projetos/feedback.jpg",
+    link: "",
+    projeto_id: "03"
+
+  },
+  {
     title: "Letmeask",
     autor: "Keven Santana",
     status: "NLW#6",
     thumb: "assets/image/projetos/letmeask.png",
     link: "",
-    projeto_id: "02"
+    projeto_id: "04"
   },
   {
     title: "Podcastr",
@@ -24,7 +41,7 @@ const projetos = [{
     status: "NLW#5",
     thumb: "assets/image/projetos/podcast.png",
     link: "https://github.com/kevensantana/NLW5-Podcastr",
-    projeto_id: "03"
+    projeto_id: "05"
   },
   {
     title: "Move.it ",
@@ -32,27 +49,10 @@ const projetos = [{
     status: "NLW#4",
     thumb: "assets/image/projetos/move.it.png",
     link: "https://github.com/kevensantana/NLW4-Move.it",
-    projeto_id: "04"
+    projeto_id: "06"
 
   },
-  {
-    title: "Move.it ",
-    autor: "Keven Santana",
-    status: "NLW#4",
-    thumb: "assets/image/projetos/move.it.png",
-    link: "",
-    projeto_id: "04"
 
-  },
-  {
-    title: "Move.it ",
-    autor: "Keven Santana",
-    status: "NLW#4",
-    thumb: "assets/image/projetos/move.it.png",
-    link: "",
-    projeto_id: "04"
-
-  },
 ];
 
 projetos.map(projeto => {
