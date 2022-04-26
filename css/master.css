@@ -3,23 +3,20 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-body {
+*{
   margin: 0;
-  border: 0;
+  padding: 0;
+}
+
+body {
+
   background-color: #121212;
   color: white;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
-}
-
-main{
-  width: 100%;
 
 }
 
-h1, h2, p {
-  margin: 0;
-}
 
 h1 {
   text-transform: uppercase;
@@ -27,11 +24,6 @@ h1 {
 
 h2 {
   font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-.nav li{
-  font-size: 14px;
 }
 
 a{
@@ -39,70 +31,18 @@ a{
   color: white;
 }
 
-
-.principal,
-.sobre,
-.experiencia,
-.projetos,
-.contato{
-  min-height: 35vh;
-}
-
-.sobre-mim {
-  background-color: #151515;
-  z-index: 0;
-  position: relative;
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
 
 section h1{
   margin-bottom: 1rem;
 }
 
-.button {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-
-
-  padding: 3px 5px 5px;
-
-
-  width: 130px;
-  height: 30px;
-
-  background-color: #121212;
-  border-radius: 8px;
-
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 1.5px;
-
-  position: relative;
-
-  transition: 0.3s; 
-
+.educacao,
+.certificados,
+.habilidades h1 {
+  margin-top: 2rem;
 }
-
-.button::before{
-  content: " ";
-  position: absolute;
-  z-index: -1;
-  inset: -2px;
-  
-  border-radius: 9px;
-
-  background: linear-gradient(
-    -45deg,
-    rgba(147, 88, 247, 1),
-    rgba(16, 215, 226, 1)
-  );
-  background-size: 140%;
-  animation: move infinite forwards 1s;
-}
-
-.button:hover {
-  background-color: #1f1f1f;
-  color: #00bbc5;
-}
-
-

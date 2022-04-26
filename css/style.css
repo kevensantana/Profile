@@ -1,207 +1,26 @@
-header {
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-}
 
-.nav {
-  padding: 0 10%;
-  display: flex;
-  align-items: center;
-  background-color: #151515;
-  border-bottom: 2px solid #272727;
-  font-weight: bold;
-  height: 60px;
-  transition: 0.3s;
-}
-
-.nav.fixed {
-  box-shadow: 0 4px 4px rgba(0,0,0,.3);
-}
-
-.nav ul {
-  display: flex;
-  justify-content: end;
-}
-
-.nav ul li {
-  list-style: none;
-  margin: 10px 30px;
-
-}
-
-.nav ul li::after {
-  content: "";
-  display: block;
-  border-bottom: 2px solid #00d2df;
-  margin-top: 5px;
-  transform: scaleX(0);
-  transition: transform 0.3s ease;
-}
-
-.nav ul li:hover::after {
-  transform: scaleX(1);
-}
-
-.nav p {
-  padding: 10px;
-  font-size: 1.3rem;
-  width: 100%;
-}
-
-.nav p a {
-  color: #00d2df;
-  transition: 0.3s;
-}
-
-.nav p a:hover {
-  color: rgba(147, 88, 247, 1);
-}
-
-
-
-/* ===============================  */
-
-.principal {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  min-height: 60vh;
-  height: 100vh;
-
-}
-
-.principal .scroll{
-  position: absolute;
-  bottom: 1rem;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.principal .scroll p{
-  padding: 1rem 0;
-  display: inline-block;
-}
-
-.principal .scroll  img {
-  animation: scroll-down 1.5s infinite forwards;
-}
-
-@keyframes scroll-down {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, -15px, 0);
-  }
-  30% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-    transform: translate3d(0, 10px, 0);
-  }
-}
-
-.principal-left {
-  position: absolute;
-  left: 0;
-  margin-left: 10%;
-}
-
-.principal-right{
-  position: absolute;
-  right: 0;
-}
-.principal-right img{
-  width: 900px;
-}
-
-
-
-.principal h1 {
-  text-transform: uppercase;
-  font-size: 1.6rem;
-  margin: 1.3rem 0;
-}
-
-.principal span {
-  font-size: 3rem;
-  text-transform: uppercase;
-  color: #00d2df;
-  font-weight: 600;
-  letter-spacing: 2px;
-}
-
-.principal .principal__input-cursor {
-  width: 3px;
-  height: 42px;
-  background-color: white;
-  display: inline-block;
-  position: relative;
-  top: 3px;
-  animation: blink 0.6s infinite alternate;
-}
-
-@keyframes blink {
-  0% {
-    opacity: 1;
-  }
-  40% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-/* ======================== */
-
-.container-botao{
-  display: flex;
-  width: 350px;
-  justify-content: space-between;
-  margin-left: 10px;
-}
-
-.button p{
-  margin-top: 3px;
-}
-
-
-/* ======================== */
 
 /* sobre  */
-.sobre{
 
-  background: #151515;
-  padding: 20px;
+.sobre{
+    background: #151515;
+    padding: 5rem 0 ;
 }
 
 .container-sobre{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin: 5% 10%;
-  height: 300px;
+  align-items: center;
+  margin: auto;
+  width: 80%;
 }
 
-.image-perfil{
-  width: 35%;
-
-}
-
-.image-perfil img {
+.image-perfil img { 
   border-left: 5px solid #00d2df;
   filter: opacity(75%);
   transition: 0.4s;
 
-  height: 300px;
+  height: 300px; 
   
 }
 
@@ -211,21 +30,23 @@ header {
 }
 
 .descricao{
-  width: 75%;
+  margin-left: 2rem;
   filter: opacity(100%);
 }
 
-.descricao p {
+.descricao h1{
+  margin: 0;
+}
+
+.descricao h2 {
+  font-size: 1rem;
+  margin: 1rem 0 ;
+}
+
+.descricao-perfil{
   filter: opacity(75%);
   line-height: 1.5;
-}
-.container-botao-sobre{
-  display: flex;
-  width: 350px;
-  justify-content: space-between;
-  margin-top: 30px;
-  filter: opacity(100%);
-
+  margin-bottom: 1.5rem;
 }
 
 
@@ -234,29 +55,28 @@ header {
 /* experiencia  */
 
 .experiencia{
-  padding: 4rem;
-
+  padding: 3em 5rem;
 }
 
-.container-exp {
-  width: 80vw;
-  margin: auto;
-  padding-left: 2rem ;
+.container-experiencia{
+  width: 90%;
 }
 
 .container-wrapper {
   display: flex;
+  
 }
 
 .empresas{
-  width: 200px;
+  width: 600px;
   cursor: pointer;
+  margin-left: 2rem;
+  margin-top: 1rem;
 }
 
 .empresas ul {
   list-style: none;
   font-size: 1.1rem;
-  padding: 0;
 }
 
 .empresas ul li.active {
@@ -273,75 +93,140 @@ header {
 
 .empresas ul li:hover {
   background-color: #272727;
+  border-left: 2px solid #00d2df;
 }
 
+.caixas{
+  padding: 2rem 0;
+}
+
+.caixas section{
+  margin-top: 1rem;
+}
 
 .experiencia-descricao {
 
-  width: 60%;
   margin-left: 5rem;
-  position: relative;
   line-height: 1.5rem;
 }
 
-.experiencia-descricao section {
-  display: none;
+.box-experiencia{
+  border-bottom: 3px solid #252525;
+  padding-bottom: 2rem;
+  position: relative;
 }
 
-.experiencia-descricao section.active {
-  display: block;
-}
-
-.experiencia-descricao section.active.show-right {
-  animation: 0.5s forwards show-right;
-}
-
-.experiencia-descricao h2 {
-  font-size: 1.4rem;
-  display: inline-block;
-}
-
-.experiencia-descricao span {
-  font-size: 0.95rem;
-  position: absolute;
-  right: 0;
-  top: 5px;
+.ano{
+  font-size: 0.85rem;
+  float: right;
   font-weight: bold;
   filter: opacity(75%);
+  margin-top: 2px;
 
 }
+
 
 .exp-local {
   margin: 1rem 0;
   font-size: 0.85rem;
-  color: #00d2df !important;
+  color: #00d2df;
   font-weight: bold;
+  
 }
 
 .exp-info p{
   filter: opacity(75%);
+  margin-bottom: 2rem;
+
 }
 
-@keyframes show-right {
-  from {
-    opacity: 0;
-    transform: translate3d(-30px, 0, 0);
-  }
 
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+/* =================================== */
+
+.container-educacao{
+  width: 90%;
+  margin: auto;
+  padding: 1rem 0;
 }
 
-@keyframes show-down {
-  from {
-    opacity: 0;
-    transform: translate3d(0, -30px, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-  }
+.ifba{
+  display: flex;
+  margin-top: 1rem;
+  
 }
+
+.image-campus{
+  width: 350px;
+  height: 300px;
+  margin-left: 2rem;
+  background-image: url('../assets/image/IFBA.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 5px;
+}
+
+.info-ifba{
+  margin-left: 2rem;
+  width: 750px;
+}
+
+.info-ifba h2 {
+  font-size: 1.4rem;
+  display: inline-block;
+}
+.descricao-ifba{
+    filter: opacity(75%);
+    line-height: 1.5;
+}
+
+/* =============================  */
+
+.certificados{
+  width: 90%;
+  margin: auto;
+}
+
+.cards-certificados {
+  height: 180px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-one{
+  width: 265px;
+  height: 180px;
+  background: #272727;
+  border: 1px solid #272727;
+  border-radius: 5px;
+}
+
+/* =============================  */
+
+.conhecimentos{
+  width: 90%;
+  margin: auto;
+  margin-top: 3rem;
+}
+
+.container-conhecimentos{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.ling img {
+  width: 60px;
+  height: 60px;
+
+  transition: all 0.3s ease 0s;
+}
+
+.ling:hover {
+  cursor: pointer;
+  transform: translateY(-7px);
+}
+
+
+/* ============================================= */
+

@@ -12,54 +12,59 @@
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
 
-  <header>
-    <nav class="nav" data-menu="suave">
-        <p><a href="#home">&lsaquo;KS/&rsaquo;</a></p>
-        <button data-menu="button" aria-controls="menu"></button>
-      <ul data-menu="list" id="menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#experiencia">Experiência</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+  <header class="header">
+    <div class="container-header">
+      <p><a href="#home">&lsaquo;KS/&rsaquo;</a></p>
+      <button data-menu="button" aria-controls="menu"></button>
+      <nav class="menu">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
     <!-- Principal - home  -->
-    <section class="principal" id="home" >
-      <div class="principal-left">
+    <section class="home" id="home">
+      <div class="home-left">
         <h1>Olá, eu sou</h1>
         <Span>Keven Santana</Span>
         <h1>Desenvolvedor Front-End</h1>
 
-        <div class="container-botao">
+        <div class="container-button">
           <a href="https://www.linkedin.com/in/keven-santana-2aaa50165" target="_blank">
             <div class="button">
-              <img src="./assets/linkedin.png" alt="LinkedIn" />
+              <img src="./assets/image/linkedin.png" alt="LinkedIn" />
               <p>LinkedIn</p>
             </div>
           </a>
           <a href="https://github.com/kevensantana" target="_blank">
             <div class="button">
-              <img src="./assets/github.png" alt="GitHub" />
+              <img src="./assets/image/github.png" alt="GitHub" />
               <p>Github</p>
             </div>
           </a>
         </div>
       </div>
 
-      <div class="principal-right">
-        <img src="./assets/Looper BG.svg" alt="Ilustração">
+      <div class="home-right">
+        <img src="./assets/image/Looper BG.svg" alt="Ilustração">
       </div>
 
-      <div class="scroll" data-menu="suave">
+      <div class="scroll">
         <a href="#sobre"> <p> scroll down </p> 
-          <img src="./assets/scroll.png" alt="Rolar para baixo">
+          <img src="./assets/image/scroll.png" alt="Rolar para baixo">
         </a>
       </div>
     </section> 
@@ -75,22 +80,20 @@
           <h2>Santo Amaro, Bahia</h2>
           <p class="descricao-perfil">
             Olá! Sou keven Santana, tenho 21 anos e atualmente estou aperfeiçoando minha carreira com dedicação nos
-            estudos para ser uma desenvolvedora fullstack. Uma trajetória em construção há mais de 5 anos, destinado a
-            melhorar as minhas habilidades técnicas e pessoais, adaptando um avanço linear e construtivo para a minha
-            carreira. Formado pelo Instituto de Ciencias e tecnologia - IFBA no tecnologo em informatica. Atuo no
+            estudos para ser uma desenvolvedora fullstack. Uma trajetória em construção há mais de 5 anos, melhorando as minhas habilidades técnicas e pessoais, adaptando um avanço linear e construtivo para carreira profissional. Formado pelo Instituto de Ciencias e tecnologia - IFBA no tecnologo em informatica. Atuo no
             mercado como freelancer, oferecendo soluções completas para sistemas web.
           </p>
 
-          <div class="container-botao-sobre">
-            <a href="./assets/" download="">
+          <div class="container-button">
+            <a href="#" download="" alt="Currículo">
               <div class="button">
-                <img src="./assets/download-cloud.png" alt="Currículo" />
+                <img src="./assets/image/download-cloud.png" alt="Currículo" />
                 <p>Currículo</p>
               </div>
             </a>
             <a href="mailto: kevensantana40@gmail.com?subject=Keven, vim pelo seu portfólio! :" target="_blank">
               <div class="button">
-                <img src="./assets/mail.png" alt="E-mail" />
+                <img src="./assets/image/mail.png" alt="E-mail" />
                 <p>E-mail</p>
               </div>
             </a>
@@ -101,7 +104,7 @@
 
     <!-- Experiências -->
     <section class="experiencia" id="experiencia">
-     <div class="container-exp">
+     <div class="container-experiencia">
         <h1>Experiência</h1>
         <div class="container-wrapper">
           <section class="empresas">
@@ -111,34 +114,105 @@
               <li>Freelancer</li>
             </ul>
           </section>
-       
 
-          <div class="experiencia-descricao" data-tab="content">
-            <section data-anime="show-right">
+          <div class="caixas" data-tab="content">
+            <section class="box-experiencia" data-anime="show-right" >
+              <span class="ano" >Dez/2019 - Mar/2020</span>
               <h2>Estagiário - Técnico em Informática</h2>
-              <span>Dez/2019 - Mar/2020</span>
-              <p class="exp-local">KingTech Informática | Santo Amaro</p>
+              <p class="exp-local">KingTech Informática, Santo Amaro</p>
               <p class="exp-info">
                 Manutenção em computadores e notebooks, configuração de sistemas operacionais, manutenção preventiva,
                 configuração em redes internas, substituição e manutenção de equipamentos em racks, manutenção
                 especializada em placa mãe, além de realizar procedimentos de formatação e recuperação.
               </p>
             </section>
-
-            <section data-anime="">
+            
+            <section class="box-experiencia" data-anime="show-right">
+              <span class="ano">Jul/2020 - Jan/2021</span>
               <h2>Estagiário - Técnico em Informática</h2>
-              <span>Jul/2020 - Jan/2021</span>
-              <p class="exp-local">TI.Net | Santo Amaro</p>
+              <p class="exp-local">TI.Net, Santo Amaro</p>
               <p class="exp-info">
-                Configuração em equipamento de redes, manutenção preventiva em computadores, atendimento aos clientes, suporte remoto e manutenção em equipamentos internos..
+                Configuração em equipamento de redes, manutenção preventiva em computadores, atendimento aos clientes, suporte remoto e manutenção em equipamentos internos.
+              </p>
+            </section>
+
+            <section>
+              <span class="ano">10/2020 - Atual</span>
+              <h2>Dev Front-End</h2>
+              <p class="exp-local">Freelancer, Salvador</p>
+              <p class="exp-info">
+               Desenvolver e analisar funcionalidades de sistemas e identificar as possíveis melhorias. Contribuir para
+               a construção da documentação e efetuar análise corretiva dos códigos.
               </p>
             </section>
           </div>
          </div>
      </div>
     </section>
+
+    <!-- Educação -->
+    <section class="educacao">
+      <div class="container-educacao">
+       <h1>Educação</h1>
+         <div class="ifba">
+            <div class="image-campus"> </div>
+            <div class="info-ifba">
+              <h2>Instituto Federal de Educação Ciência e Tecnologia - IFBA</h2>
+              <p class="exp-local">Curso: Informática | Ensino médio técnico | Concluído em 12/2021</p>
+              <p class="descricao-ifba">
+                No campus Santo Amaro - BA, estudei a base para todos os procedimentos na área, como: Manutenção de
+                computadores, gerenciamento de projeto, planejamento e gerenciamento de redes, desenvolvimento desktop
+                utilizando a linguagem Java para construir e exercitar conceito de orientação a objeto. Disciplina em
+                desenvolvimento web com HTML, CSS, JavaScript, onde realizei projetos reais para a comunidade local.
+                Tive
+                experiências com banco de dados SQL, Angularjs e Node.
+              </p>
+            </div>
+         </div>
+     </div>
+
+      <div class="certificados">
+         <h1>Certificados</h1>
+         <div class="cards-certificados">
+            <div class="card-one"> </div>
+            <div class="card-one"> </div>
+            <div class="card-one"> </div>
+            <div class="card-one"> </div>
+         </div>
+      </div>
+    </section>
+
+     <section class="conhecimentos">
+       <h1>conhecimentos</h1>
+       <div class="container-conhecimentos">
+           <div class="ling">
+             <img src="assets/Ling/JS.png" alt="HTML">
+           </div>
+       </div>
+     </section>
+    
+      <section id="projetos">
+        <div class="deg"></div>
+        <div class="projetos-container">
+          <h1>Meus Projetos</h1>
+          <div class="cards">
+            <div class="card">
+              <div class="image">
+                <img src="assets/image/projetos/design.jpeg" />
+              </div>
+              <div class="content">
+                <h3 class="title text--medium"> DS Delivery </h3>
+                <div class="info">
+                  <p class="text--medium">Bootcamp</p>
+                  <a id="link" class="button-card">Ver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
   </main>
 
-  <script src="js/script.js"> </script>
+   <script src="script/scripts.js"></script>
 </body>
 </html> 
