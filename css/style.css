@@ -2,7 +2,7 @@
 
 /* sobre  */
 
-.sobre{
+#sobre{
     background: #151515;
     padding: 5rem 0 ;
 }
@@ -54,7 +54,7 @@
 
 /* experiencia  */
 
-.experiencia{
+#experiencia{
   padding: 3em 5rem;
 }
 
@@ -206,26 +206,31 @@
   width: 90%;
   margin: auto;
   margin-top: 3rem;
+  display: block;
 }
 
-.container-conhecimentos{
-    margin: 1rem 0;
+.container-one,
+.container-two{
+    margin: 1.5rem 0;
     display: flex;
     justify-content: space-evenly;
     align-items: baseline;
 }
 
-.ling img {
-  width: 60px;
-  height: 60px;
+.ling img,
+.lingTwo img {
+  width: 4rem;
+  height: 4rem;
 
   transition: all 0.3s ease 0s;
 }
 
-.ling:hover {
+.ling:hover,
+.lingTwo:hover {
   cursor: pointer;
   transform: translateY(-7px);
 }
+
 
 
 /* ============================================= */

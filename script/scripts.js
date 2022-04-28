@@ -1,29 +1,49 @@
 
 //Ling
-const sectionling = document.querySelector("div.container-conhecimentos");
+const one = document.querySelector("div.container-one");
+const two= document.querySelector("div.container-two");
 const ling = document.querySelector("div.ling");
+const lingTwo = document.querySelector("div.lingTwo");
 
 const imagem = [
   {img: "assets/image/Ling/JS.png"},
-  {img: "assets/image/Ling/HTML.png"},
-  {img: "assets/image/Ling/CSS.png"},
-  {img: "assets/image/Ling/Java.png"},
-  {img: "assets/image/Ling/GIT.png"},
-  {img: "assets/image/Ling/GITHUB.png"},
+  {img: "assets/image/Ling/html-5.png"},
+  {img: "assets/image/Ling/css.png"},
+  {img: "assets/image/Ling/java.png"},
+  {img: "assets/image/Ling/git.png"},
+  {img: "assets/image/Ling/github.png"},
   {img: "assets/image/Ling/GITLAB.png"},
-  {img: "assets/image/Ling/REACT.png"},
-  {img: "assets/image/Ling/ANGULAR.png"},
-  {img: "assets/image/Ling/NODEJS.png"},
-  {img: "assets/image/Ling/MYSQL.png"},
+  {img: "assets/image/Ling/physics.png"},
+  {img: "assets/image/Ling/node-js.png"},
+  {img: "assets/image/Ling/mysql.png"},
 ];
 
 imagem.map(imagem => {
   const lingClone = ling.cloneNode(true);
   lingClone.querySelector("img").src = imagem.img;
-  sectionling.appendChild(lingClone);
+  one.appendChild(lingClone);
+});
+
+
+const imagemTwo = [
+  {img: "assets/image/Ling/typescript.png"},
+  {img: "assets/image/Ling/figma.png"},
+  {img: "assets/image/Ling/sass.png"},
+  {img: "assets/image/Ling/php.png"},
+  {img: "assets/image/Ling/docker.png"},
+  {img: "assets/image/Ling/ANGULAR.png"},
+  {img: "assets/image/Ling/python.png"},
+  {img: "assets/image/Ling/linux.png"},
+]
+
+imagemTwo.map(imagemTwo => {
+  const lingClone2 = lingTwo.cloneNode(true);
+  lingClone2.querySelector("img").src = imagemTwo.img;
+  two.appendChild(lingClone2);
 });
 
 ling.remove();
+lingTwo.remove();
 
 // ====================================================
 
