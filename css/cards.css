@@ -8,7 +8,7 @@
    width: 90%;
    margin: auto;
    padding-top: 4rem;
-   padding-bottom: 10rem;
+   padding-bottom: 4rem;
 }
 
 
@@ -41,6 +41,8 @@
    cursor: pointer;
    transition: all 0.3s ease 0s;
 
+   position: relative;
+   z-index: 1;
 }
 
   
@@ -121,3 +123,25 @@
     transition: 0.3s;
 }
 
+
+
+.visible-box{
+   width: 90%;
+   height: 30px;
+   background: #272727;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   position: absolute;
+   z-index: 10;
+
+   margin-top: 23rem;
+}
+
+.visible-box button{
+   padding: 5px 8px;
+   cursor: pointer;
+
+}

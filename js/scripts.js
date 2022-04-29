@@ -1,4 +1,23 @@
 
+// efeito maquina 
+function typewrite(elemento) {
+  const textArray = elemento.innerHTML.split('');
+  elemento.innerHTML = '';
+  textArray.forEach((letra,i) => {
+    setTimeout(() => elemento.innerHTML += letra, 155 * i);
+  })
+}
+
+const nome = document.querySelector('span.nome');
+typewrite(nome)
+
+
+// visibility
+
+
+
+
+
 //Ling
 const one = document.querySelector("div.container-one");
 const two= document.querySelector("div.container-two");
@@ -85,6 +104,24 @@ const projetos = [
     projeto_id: "04"
 
   },
+   {
+     title: "Move.it ",
+     autor: "Keven Santana",
+     status: "NLW#4",
+     thumb: "assets/image/projetos/move.it.png",
+     link: "",
+     projeto_id: "04"
+
+   },
+    {
+      title: "Move.it ",
+      autor: "Keven Santana",
+      status: "NLW#4",
+      thumb: "assets/image/projetos/move.it.png",
+      link: "",
+      projeto_id: "04"
+
+    },
 ];
 
 projetos.map(projeto => {
