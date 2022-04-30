@@ -8,6 +8,7 @@
     <meta name="description" content="Portfólio do desenvolvedor front-end Keven G S Santana">
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
     <title>Keven Santana</title>
+    <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="="anonymous></script>
     <link rel="icon" href="./icon.png">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/style.css">
@@ -171,12 +172,35 @@
 
       <div class="certificados">
          <h1>Certificados</h1>
-         <div class="cards-certificados">
-            <div class="card-one"> </div>
-            <div class="card-one"> </div>
-            <div class="card-one"> </div>
-            <div class="card-one"> </div>
-         </div>
+          <div class="slide">
+            <div id="voltar" class="button-carousel">
+              <i class="fas fa-chevron-left"></i>
+            </div>
+            <div id="proximo" class="button-carousel">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+              <div class="slides">
+                <div id="atual" class="slideImage">
+                  <img src="assets/image/certificados/cert01.png" alt="">
+                  <img src="assets/image/certificados/cert02.png" alt="">
+                  <img src="assets/image/certificados/cert03.png" alt="">
+                  <img src="assets/image/certificados/cert04.png" alt="">
+                </div>
+                <div class="slideImage">
+                  <img src="assets/image/certificados/cert05.png" alt="">
+                  <img src="assets/image/certificados/cert06.png" alt="">
+                  <img src="assets/image/certificados/cert07.png" alt="">
+                  <img src="assets/image/certificados/cert08.png" alt="">
+                </div>
+               
+              </div>
+
+              <div class="balls">
+                <div class="slideAtual" id="0"></div>
+                <div id="1"></div>
+                <div id="2"></div>
+              </div>
+          </div>
       </div>
     </section>
 
@@ -184,7 +208,7 @@
       <h1>conhecimentos</h1>
       <div class="container-one">
           <div class="ling">
-            <img src="assets/Ling/JS.png" alt="HTML">
+            <img src="assets/image/Ling/JS.png" alt="HTML">
           </div>
         </div>
         <div class="container-two"> 
@@ -210,10 +234,6 @@
                 <a id="link" class="button-card">Ver</a>
               </div>
             </div>
-          </div>
-          
-          <div class="visible-box">
-            <button id="show-or-hide">Ver mais</button>
           </div>
         </div>
       </div>
@@ -256,5 +276,6 @@
   </main>
 
    <script defer src="js/scripts.js"></script>
+   <script defer src="js/projetos.js"></script>
 </body>
 </html> 

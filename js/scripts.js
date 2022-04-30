@@ -14,7 +14,54 @@ typewrite(nome)
 
 // visibility
 
+var balls = document.querySelector('.balls')
+var qtd = document.querySelectorAll('.slides .slideImage')
+var atual = 0;
+var slideImage = document.getElementById('atual')
+var proximo = document.getElementById('proximo')
+var voltar = document.getElementById('voltar')
 
+for(let i=2; i < qtd.length; i++){
+  var div = document.createElement('div')
+  div.id = i
+  balls.appendChild(div)
+}
+
+document.getElementById('0').classList.add('slideAtual')
+
+var pos = document.querySelectorAll('.balls div')
+
+for(let i=0; i< pos.length; i++){
+  pos[i].addEventListener('click',() => {
+    atual = pos[i].id
+    slide()
+  })
+}
+
+voltar.addEventListener('click', () => {
+  atual--
+  slide()
+})
+
+proximo.addEventListener('click', () => {
+  atual++ 
+  slide()
+})
+
+
+function slide(){
+  if(atual >= qtd.length){
+    atual = 0
+  }
+  else if(atual < 0){
+    atual = qtd.length-1
+  }
+  document.querySelector('.slideAtual').classList.remove('slideAtual')
+  slideImage.style.marginLeft = -1180*atual+'px'
+  document.getElementById(atual).classList.add('slideAtual')
+}
+
+slide(0)
 
 
 
@@ -66,72 +113,5 @@ lingTwo.remove();
 
 // ====================================================
 
-// Make Cards
-const sectionCards = document.querySelector("div.cards");
-const card = document.querySelector("div.card");
 
-const projetos = [
-  {
-    title: "DS Delivery",
-    autor: "Keven Santana",
-    status: "Bootcamp",
-    thumb: "assets/image/projetos/design.jpeg",
-    link: "google.com",
-    projeto_id: "01"
-  },
-  {
-    title: "Letmeask",
-    autor: "Keven Santana",
-    status: "NLW#6",
-    thumb: "assets/image/projetos/letmeask.png",
-    link: "",
-    projeto_id: "02"
-  },
-  {
-    title: "Podcastr",
-    autor: "Keven Santana",
-    status: "NLW#5",
-    thumb: "assets/image/projetos/podcast.png",
-    link: "",
-    projeto_id: "03"
-  },
-  {
-    title: "Move.it ",
-    autor: "Keven Santana",
-    status: "NLW#4",
-    thumb: "assets/image/projetos/move.it.png",
-    link: "",
-    projeto_id: "04"
-
-  },
-   {
-     title: "Move.it ",
-     autor: "Keven Santana",
-     status: "NLW#4",
-     thumb: "assets/image/projetos/move.it.png",
-     link: "",
-     projeto_id: "04"
-
-   },
-    {
-      title: "Move.it ",
-      autor: "Keven Santana",
-      status: "NLW#4",
-      thumb: "assets/image/projetos/move.it.png",
-      link: "",
-      projeto_id: "04"
-
-    },
-];
-
-projetos.map(projeto => {
-  const cardClone = card.cloneNode(true);
-  cardClone.setAttribute("id", projeto.projeto_id);
-  cardClone.querySelector("img").src = projeto.thumb;
-  cardClone.querySelector(".title").innerHTML = projeto.title;
-  cardClone.querySelector(".info > p.text--medium").innerHTML = projeto.status;
-  sectionCards.appendChild(cardClone);
-});
-
-card.remove();
 
