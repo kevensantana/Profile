@@ -9,7 +9,7 @@
     <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
     <title>Keven Santana</title>
     <script src="https://kit.fontawesome.com/ca14b9e588.js" crossorigin="="anonymous></script>
-    <link rel="icon" href="./icon.png">
+    <link rel="icon" href="assets/image/icon/icon.svg">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobile.css">
@@ -19,12 +19,13 @@
 </head>
 <body>
 
-  <header class="header">
+  <header id="header">
     <div class="container-header">
-      <p><a href="#home">&lsaquo;KS/&rsaquo;</a></p>
-      <button data-menu="button" aria-controls="menu"></button>
-      <nav class="menu">
-        <ul>
+      <a id="logo" href="#home">&lsaquo;KS/&rsaquo;</a>
+      
+      <button id="btn-mobile">Menu</button>
+      <nav id="nav">
+        <ul id="menu">
           <li><a href="#home">Home</a></li>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#experiencia">Experiência</a></li>
@@ -259,6 +260,7 @@
       </form>
     </div>
     </section>
+  </main>
     
     <a href="#" class="btn"></a>
 
@@ -273,9 +275,9 @@
       </div>
       
     </footer>
-  </main>
 
    <script defer src="js/scripts.js"></script>
    <script defer src="js/projetos.js"></script>
+   <script defer src="js/menu.js"></script>
 </body>
 </html> 

@@ -14,6 +14,10 @@ typewrite(nome)
 
 // visibility
 
+// ====================================================
+
+//certificados
+
 var balls = document.querySelector('.balls')
 var qtd = document.querySelectorAll('.slides .slideImage')
 var atual = 0;
@@ -57,13 +61,14 @@ function slide(){
     atual = qtd.length-1
   }
   document.querySelector('.slideAtual').classList.remove('slideAtual')
-  slideImage.style.marginLeft = -1180*atual+'px'
+  slideImage.style.marginLeft = -1170*atual+'px'
   document.getElementById(atual).classList.add('slideAtual')
 }
 
 slide(0)
 
 
+// ====================================================
 
 //Ling
 const one = document.querySelector("div.container-one");
@@ -112,6 +117,7 @@ ling.remove();
 lingTwo.remove();
 
 // ====================================================
+
 
 
 
