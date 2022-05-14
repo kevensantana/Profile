@@ -12,7 +12,7 @@
   border-radius: 8px;
 
   font-weight: 600;
-  font-size: 0.95rem;
+  font-size: 1rem;
   letter-spacing: 1.5px;
 
   position: relative;
@@ -40,7 +40,9 @@
 }
 
 .button p {
-  margin-top: 3px;
+  margin-top: .3rem;
+  font-size: 1.3rem;
+
 }
 
 
@@ -107,4 +109,99 @@
 
 .btn:hover::after {
   margin-top: -9px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* button mobile  */
+
+#btn-mobile {
+  display: none;
+}
+
+/* Principal */
+@media (max-width: 880px) {
+
+  #btn-mobile {
+    display: block;
+    background-color: #151515;
+    border: none;
+    border-top: 3px #00d2df solid;
+    padding: 1rem 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+  }
+
+  #btn-mobile::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #00d2df;
+    transition: .3s transform;
+  }
+
+  #btn-mobile:after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #00d2df;
+    transition: .3s transform;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  #nav.active {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    right: 1%;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
+    background-color: #151515;
+
+    padding: 6em 2rem 1rem;
+    text-align: center;
+    z-index: 50;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+  }
+
+  #nav.active #menu {
+    flex-direction: column;
+    animation: show-down .3s forwards;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+  }
+
+
+
+
 }

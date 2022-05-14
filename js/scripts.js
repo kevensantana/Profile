@@ -118,6 +118,20 @@ lingTwo.remove();
 
 // ====================================================
 
+function leiaMais(){
+  var verMais = document.getElementById("verMais")
+  var maisTexto = document.getElementById("mais")
+  var leiaMais = document.getElementById("leiaMais")
 
+  if(verMais.style.display === "none"){
+      verMais.style.display = "inline";
+      maisTexto.style.display = "none";
+      leiaMais.innerHTML = "...";
+  } else{
+      verMais.style.display = "none";
+      maisTexto.style.display = "inline";
+      leiaMais.innerHTML = "...sa"
+  }
+}
 
 

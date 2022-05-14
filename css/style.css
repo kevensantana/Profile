@@ -21,7 +21,6 @@
   transition: 0.4s;
 
   height: 300px; 
-  
 }
 
 .image-perfil img:hover {
@@ -36,11 +35,14 @@
 
 .descricao h1{
   margin: 0;
+  
 }
 
 .descricao h2 {
-  font-size: 1rem;
+  font-size: 1.3rem;
   margin: 1rem 0 ;
+  filter: opacity(75%);
+
 }
 
 .descricao-perfil{
@@ -55,11 +57,14 @@
 /* experiencia  */
 
 #experiencia{
-  padding: 3em 5rem;
+
+  padding-top: 4rem;
 }
 
 .container-experiencia{
   width: 90%;
+  margin: auto;
+  padding: 1rem 0;
 }
 
 .container-wrapper {
@@ -68,15 +73,14 @@
 }
 
 .empresas{
-  width: 600px;
+  width: 500px;
   cursor: pointer;
-  margin-left: 2rem;
-  margin-top: 1rem;
+  margin: 2rem 1rem;
 }
 
 .empresas ul {
   list-style: none;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
 }
 
 .empresas ul li.active {
@@ -86,7 +90,7 @@
 }
 
 .empresas li {
-  padding: 10px;
+  padding: 1rem;
   border-left: 2px solid #272727;
   transition: background-color 0.5s ease;
 }
@@ -97,6 +101,7 @@
 }
 
 .caixas{
+  margin-right: 5%;
   padding: 2rem 0;
 }
 
@@ -104,20 +109,21 @@
   margin-top: 1rem;
 }
 
-.experiencia-descricao {
-
-  margin-left: 5rem;
-  line-height: 1.5rem;
-}
 
 .box-experiencia{
   border-bottom: 3px solid #252525;
   padding-bottom: 2rem;
+  padding-top: 1rem;
   position: relative;
+  line-height: 2.5rem;
+}
+
+.box-experiencia h2{
+    font-size: 1.6rem;
 }
 
 .ano{
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   float: right;
   font-weight: bold;
   filter: opacity(75%);
@@ -128,7 +134,7 @@
 
 .exp-local {
   margin: 1rem 0;
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   color: #00d2df;
   font-weight: bold;
   
@@ -151,32 +157,45 @@
 
 .ifba{
   display: flex;
-  margin-top: 1rem;
+  margin-top: 2rem;
   
 }
 
 .image-campus{
-  width: 350px;
-  height: 300px;
+  width: 37rem;
+  height: 30rem;
   margin-left: 2rem;
   background-image: url('../assets/image/IFBA.jpg');
   background-repeat: no-repeat;
-  background-size: contain;
-  border-radius: 5px;
+  background-size: cover;
+  border-radius: .5rem;
 }
 
 .info-ifba{
   margin-left: 2rem;
-  width: 750px;
+  width: 65%;
 }
 
 .info-ifba h2 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   display: inline-block;
+}
+
+.ifba-local {
+  margin: 1rem 0;
+  font-size: 1.4rem;
+  color: #00d2df;
+  font-weight: bold;
+
 }
 .descricao-ifba{
     filter: opacity(75%);
     line-height: 1.5;
+    margin-bottom: 3rem;
+}
+
+.container-button-ifba{
+    margin-left: 3rem;
 }
 
 /* =============================  */

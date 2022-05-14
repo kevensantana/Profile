@@ -1,78 +1,143 @@
 
-#btn-mobile {
-    display: none;
-}
-
 /* Principal */
 @media (max-width: 880px) {
 
-     #btn-mobile {
-         display: block;
-         background-color: #151515;
-         border: none;
-         border-top: 3px #00d2df solid;
-         padding: .4rem .3rem;
-         text-transform: uppercase;
-         cursor: pointer;
-         position: relative;
-         z-index: 100;
-     }
 
-    #btn-mobile::before {
-         content: '';
-         display: block;
-         position: absolute;
-         bottom: 0;
-         left: 0;
-         height: 3px;
-         width: 100%;
-         background-color: #00d2df;
-         transition: .3s transform;
-     }
 
-    #btn-mobile:after {
-         content: '';
-         display: block;
-         position: absolute;
-         bottom: 50%;
-         left: 0;
-         height: 3px;
-         width: 100%;
-         background-color: #00d2df;
-         transition: .3s transform;
-     }
-     #nav{
-         display: none;
-     }
-
-     #nav.active {
-         display: block;
-         
-         position: absolute;
-         top: 0;
-         right:1%;
-         box-shadow: 0 4px 4px rgba(0, 0, 0, .3);
-         background-color: #151515;
-
-        padding: 6em 2rem 1rem;
-        text-align: center;
-        z-index: 50;
-        margin: 0;
-        font-family: "Inter", sans-serif;
-     }
-
-    #nav.active #menu{
-        flex-direction: column;
-        animation: show-down .3s forwards;
-        text-transform: uppercase;
-        letter-spacing: 2px;
-        
-     }
 }
 
 
 
 @media (max-width: 768px) {
+
+    body{
+        text-align: center;
+    }
+
+        /* home  */
+
+
+    .container-home {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        width: 100%;
+
+    }
+    
+    .home-left{
+        font-size: 1.6rem;
+        width: 100%;
+    }
+
+    .home-left span{
+        font-size: 3.6rem;
+    }
+
+    .container-button {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+        
+        margin-top: 1rem;
+    }
+
+       /* sobre  */
+
+    .home-right {
+        display: none;
+    }
+
+    .scroll {
+        width: 100%;
+        left: 0;
+    }
+
+    .container-sobre {
+        display: block;
+        width: 85%;
+    }
+    
+    .image-perfil img{
+        height: 220px;
+        margin-bottom: 2rem;
+    }
+
+    .descricao{
+        margin: 0;
+    }
+
+     .descricao-perfil {
+       text-align: justify;
+        
+    }
+    
+    #mais {
+        display: none;
+    }
+
+
+
+    #leiaMais {
+        cursor: pointer;
+        color: #00d2df;
+    }
+
+    .empresas{
+        display: none;
+    }
+
+   .container-experiencia {
+       width: 85%;
+       margin: auto;
+       text-align: left;
+       text-align: justify;
+   }
+   .caixas{
+       margin: 0;
+   }
+
+   .ano{
+       float: none;
+   }
+
+   .container-educacao{
+       width: 100%;
+       margin: auto;
+
+       margin-bottom: 4rem;
+   }
+
+   .ifba{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+   }
+
+   .image-campus {
+       margin: auto;
+       margin: 0;
+       border-radius: 1rem;
+   }
+
+   .info-ifba {
+       margin: 0;
+       width: 85%;
+
+       padding-top: 3rem;
+   }
+
+
+   .container-button-ifba {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+   }
+
+
 
 
 }
@@ -82,4 +147,6 @@
 
 }
 
-@media (max-width: 450px) {}
+@media (max-width: 450px) {
+
+}

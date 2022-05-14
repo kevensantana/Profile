@@ -12,10 +12,10 @@
     <link rel="icon" href="assets/image/icon/icon.svg">
     <link rel="stylesheet" href="css/master.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mobile.css">
-    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/button.css">
     <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 <body>
 
@@ -23,7 +23,7 @@
     <div class="container-header">
       <a id="logo" href="#home">&lsaquo;KS/&rsaquo;</a>
       
-      <button id="btn-mobile">Menu</button>
+      <button id="btn-mobile"></button>
       <nav id="nav">
         <ul id="menu">
           <li><a href="#home">Home</a></li>
@@ -39,35 +39,38 @@
   <main>
     <!-- Principal - home  -->
     <section class="home" id="home">
-      <div class="home-left">
-        <h1>Olá, eu sou</h1>
-        <Span class="nome">Keven Santana</Span>
-        <h1>Desenvolvedor Front-End</h1>
+      <div class="container-home">
+        <div class="home-left">
+          <h1>Olá, eu sou</h1>
+          <Span class="nome">Keven Santana</Span>
+          <h1>Desenvolvedor Front-End</h1>
 
-        <div class="container-button">
-          <a href="https://www.linkedin.com/in/keven-santana-2aaa50165" target="_blank">
-            <div class="button">
-              <img src="./assets/image/icon/linkedin.png" alt="LinkedIn" />
-              <p>LinkedIn</p>
-            </div>
-          </a>
-          <a href="https://github.com/kevensantana" target="_blank">
-            <div class="button">
-              <img src="./assets/image/icon/github.png" alt="GitHub" />
-              <p>Github</p>
-            </div>
+          <div class="container-button">
+            <a href="https://www.linkedin.com/in/keven-santana-2aaa50165" target="_blank">
+              <div class="button">
+                <img src="./assets/image/icon/linkedin.png" alt="LinkedIn" />
+                <p>LinkedIn</p>
+              </div>
+            </a>
+            <a href="https://github.com/kevensantana" target="_blank">
+              <div class="button">
+                <img src="./assets/image/icon/github.png" alt="GitHub" />
+                <p>Github</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="home-right">
+          <img src="./assets/image/Looper BG.svg" alt="Ilustração">
+        </div>
+
+        <div class="scroll">
+          <a href="#sobre">
+            <p> scroll down </p>
+            <img src="./assets/image/icon/scroll.png" alt="Rolar para baixo">
           </a>
         </div>
-      </div>
-
-      <div class="home-right">
-        <img src="./assets/image/Looper BG.svg" alt="Ilustração">
-      </div>
-
-      <div class="scroll">
-        <a href="#sobre"> <p> scroll down </p> 
-          <img src="./assets/image/icon/scroll.png" alt="Rolar para baixo">
-        </a>
       </div>
     </section> 
 
@@ -81,7 +84,13 @@
           <h1>Sobre mim</h1>
           <h2>Santo Amaro, Bahia</h2>
           <p class="descricao-perfil">
-            Olá! Sou keven Santana, tenho 21 anos e atualmente estou aperfeiçoando minha carreira com dedicação nos estudos para ser uma desenvolvedora fullstack. Uma trajetória em construção há mais de 5 anos, melhorando as minhas habilidades técnicas e pessoais, adaptando um avanço linear e construtivo para carreira profissional. Formado pelo Instituto de Ciencias e tecnologia - IFBA no tecnologo em informatica. Atuo no mercado como freelancer, oferecendo soluções completas para sistemas web.
+              Olá! Sou keven Santana, tenho 21 anos e atualmente estou aperfeiçoando minha carreira com dedicação nos
+              estudos para ser uma desenvolvedor fullstack.
+              <span id="verMais"> <a onclick="leiaMais()" id="leiaMais">Leia mais...</a></span> <span id="mais">Uma
+              trajetória em construção há mais de 5 anos, melhorando as minhas habilidades técnicas e pessoais,
+              adaptando um avanço linear e construtivo para carreira profissional. Formado pelo Instituto de Ciencias e
+              tecnologia - IFBA no tecnologo em informatica. Atuo no mercado como freelancer, oferecendo soluções
+              completas para web.</span>
           </p>
 
           <div class="container-button">
@@ -117,32 +126,29 @@
 
           <div class="caixas" data-tab="content">
             <section class="box-experiencia" data-anime="show-right" >
-              <span class="ano" >Dez/2019 - Mar/2020</span>
               <h2>Estagiário - Técnico em Informática</h2>
+              <span class="ano" >Dez/2019 - Mar/2020</span>
               <p class="exp-local">KingTech Informática, Santo Amaro</p>
               <p class="exp-info">
-                Manutenção em computadores e notebooks, configuração de sistemas operacionais, manutenção preventiva,
-                configuração em redes internas, substituição e manutenção de equipamentos em racks, manutenção
-                especializada em placa mãe, além de realizar procedimentos de formatação e recuperação.
+                Manutenção em computadores e notebooks, configuração de sistemas operacionais, manutenção preventiva, configuração em redes internas, substituição e manutenção de equipamentos em racks, manutenção especializada em placa mãe, além de realizar procedimentos de formatação e recuperação.
               </p>
             </section>
             
             <section class="box-experiencia" data-anime="show-right">
-              <span class="ano">Jul/2020 - Jan/2021</span>
               <h2>Estagiário - Técnico em Informática</h2>
+              <span class="ano">Jul/2020 - Jan/2021</span>
               <p class="exp-local">TI.Net, Santo Amaro</p>
               <p class="exp-info">
-                Configuração em equipamento de redes, manutenção preventiva em computadores, atendimento aos clientes, suporte remoto e manutenção em equipamentos internos.
+                Configuração em equipamento de redes, manutenção preventiva em computadores, atendimento aos clientes, suporte remoto e manutenção em equipamentos internos. Entender a dificuldade de acesso dos clientes e solucionar os possíveis problemas
               </p>
             </section>
 
-            <section>
-              <span class="ano">10/2020 - Atual</span>
-              <h2>Dev Front-End</h2>
+            <section class="box-experiencia" data-anime="show-right">
+              <h2>Desenvolvedor Front-End</h2>
+              <span class="ano">Out/2021 - Atual</span>
               <p class="exp-local">Freelancer, Salvador</p>
               <p class="exp-info">
-               Desenvolver e analisar funcionalidades de sistemas e identificar as possíveis melhorias. Contribuir para
-               a construção da documentação e efetuar análise corretiva dos códigos.
+               Desenvolver e analisar funcionalidades de sistemas e identificar as possíveis melhorias. Contribuir para a construção da documentação e efetuar análise corretiva de ferramentas.
               </p>
             </section>
           </div>
@@ -158,7 +164,7 @@
             <div class="image-campus"> </div>
             <div class="info-ifba">
               <h2>Instituto Federal de Educação Ciência e Tecnologia - IFBA</h2>
-              <p class="exp-local">Curso: Informática | Ensino médio técnico | Concluído em 12/2021</p>
+              <p class="ifba-local">Curso: Informática | Ensino médio técnico | Concluído em 12/2021</p>
               <p class="descricao-ifba">
                 No campus Santo Amaro - BA, estudei a base para todos os procedimentos na área, como: Manutenção de
                 computadores, gerenciamento de projeto, planejamento e gerenciamento de redes, desenvolvimento desktop
@@ -167,8 +173,17 @@
                 Tive
                 experiências com banco de dados SQL, Angularjs e Node.
               </p>
+              <div class="container-button-ifba">
+                <a href="assets/docs/SSA Keven Santana - CV.pdf" download="" alt="Currículo">
+                  <div class="button">
+                    <img src="./assets/image/icon/gerenciamento-de-projetos.png" alt="Currículo" />
+                    <p>Projetos</p>
+                  </div>
+                </a>
+              </div>
             </div>
          </div>
+
      </div>
 
       <div class="certificados">
