@@ -1,15 +1,16 @@
 
 /* Principal */
-@media (max-width: 800px) {
-
-
-    .img-form-right {
-        display: none;
-    }
-
+@media (max-width: 1020px) {
     .home-right {
-        display: none;
+        top: 5vh;
     }
+
+    .home-right img {
+        height: 50rem;
+        width: 60rem;
+    }
+
+
 }
 
 
@@ -22,8 +23,6 @@
 
         /* home  */
 
-
-
     .container-home {
         display: flex;
         justify-content: center;
@@ -31,6 +30,7 @@
         width: 100%;
 
     }
+
     
     .home-left{
         font-size: 1.6rem;

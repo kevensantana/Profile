@@ -142,6 +142,14 @@
 /* Principal */
 @media (max-width: 880px) {
 
+    .img-form-right {
+      display: none;
+    }
+
+    .home-right {
+      display: none;
+    }
+
   #btn-mobile {
     display: block;
     background-color: #151515;
