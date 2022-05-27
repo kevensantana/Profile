@@ -13,6 +13,10 @@
   font-size: 62.5%;
   /* 1rem=10px */
 
+  --background-fundo: #121212;
+  --marcacao: #151515;
+  --border: #252525;
+  --border-left: #272727;
 }
 
 html {
@@ -29,7 +33,7 @@ body{
 
     font-size: 1.6rem;
 
-    background-color: #121212;
+    background-color: var(--background-fundo);
     color: white;
     font-family: "Inter",
     sans-serif;

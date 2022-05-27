@@ -5,14 +5,82 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projetos</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/cards.css">
+  <link rel="stylesheet" href="css/button.css">
+  <link rel="stylesheet" href="css/projetos.css">
 </head>
 <body>
 
-  
-  <h1>Projetos - IFBA</h1>
-  
-  <h1>Outros</h1>
-  
-  <h1>Contribuições</h1>
+   <header id="header">
+     <div class="container-header">
+       <a id="logo" href="/#home">&lsaquo;KS/&rsaquo;</a>
+
+       <button id="btn-mobile"></button>
+       <nav id="nav">
+         <ul id="menu">
+           <li><a href="/#home">Home</a></li>
+           <li><a href="/#sobre">Sobre</a></li>
+           <li><a href="/#experiencia">Experiência</a></li>
+           <li><a href="#contato">Contato</a></li>
+         </ul>
+       </nav>
+     </div>
+   </header>
+
+
+   <main>
+
+      <section>
+        <div class="projetos-container">
+          <h1>Projetos IFBA</h1>
+          <div class="projeto-list">
+              <div class="projeto">
+                <h3>OperaSUS</h3>
+                <p class="text--medium">Um projeto para ajudar a comunidade de Santo Amaro e região...</p>
+                <a id="link" class="button-card">Ver</a>
+              </div>
+              <div class="projeto">
+                <h3>Reclama Santo Amaro</h3>
+                <p class="text--medium">Uma alternativa para as pessoas que se sentiam incomodadas... </p>
+                <a id="link" class="button-card">Ver</a>
+              </div>
+              <div class="projeto">
+                <h3>Repositório IFBA</h3>
+                <p class="text--medium">Sistema para compartilhamento de conteudos e ideias... </p>
+                <a id="link" class="button-card">Ver</a>
+              </div>
+          </div>
+        </div>  
+      </section>
+
+      <section id="projetos">
+        <div class="projetos-container">
+          <h1>Meus Projetos</h1>
+          <div class="cards">
+            <div class="card">
+              <div class="image">
+                <img src="assets/image/projetos/design.jpeg" />
+              </div>
+              <div class="content">
+                <h3 class="title text--medium"> DS Delivery </h3>
+                <div class="info">
+                  <p class="text--medium">Bootcamp</p>
+                  <a id="link" class="button-card">Ver</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+   </main>
+
+
+
+      <script defer src="js/scripts.js"></script>
+      <script defer src="js/projetos.js"></script>
+      <script defer src="js/menu.js"></script>
 </body>
 </html>

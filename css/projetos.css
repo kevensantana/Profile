@@ -1,0 +1,32 @@
+
+
+main{
+  padding-top: 10% ;
+
+}
+
+.projeto-list{
+  height: 30rem;
+  width: 95%;
+  margin: auto;
+  padding-top: 1rem;
+}
+
+
+.projeto{
+  border-radius: 1rem;
+  padding: 1rem 1.5rem;
+  background: var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: alias;
+
+  margin-bottom: 1rem;
+}
+
+.projeto p{
+  position: absolute;
+  left: 30%;
+}

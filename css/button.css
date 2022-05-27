@@ -150,6 +150,10 @@
       display: none;
     }
 
+    .projeto p {
+      display: none;
+    }
+
   #btn-mobile {
     display: block;
     background-color: #151515;

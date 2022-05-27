@@ -106,24 +106,25 @@
    align-items: center;
    justify-content: center;
 
-    padding: 1px 1px 1x;
+   padding: 1px 1px 1x;
 
+   cursor: pointer;
 
-    width: 60px;
-    height: 30px;
+   width: 60px;
+   height: 30px;
 
-    background-color: #121212;
-    border-radius: 8px;
+   background-color: #121212;
+   border-radius: 8px;
 
-    font-weight: 600;
-    font-size: 1.2rem;
-    letter-spacing: 1.5px;
+   font-weight: 600;
+   font-size: 1.2rem;
+   letter-spacing: 1.5px;
 
-    position: relative;
+   position: relative;
 
-    transition: 0.3s;
+   transition: 0.3s;
 
-    border: 1px solid #151515;
+   border: 1px solid #151515;
 }
 
 .button-card:hover {
