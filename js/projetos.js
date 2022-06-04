@@ -15,7 +15,7 @@ const projetos = [{
     autor: "Keven Santana",
     status: "NLW#8",
     thumb: "assets/image/projetos/doctorCare.jpg",
-    link: "",
+    link: "https://github.com/kevensantana/DoctorCare-",
     projeto_id: "02"
 
   }, {

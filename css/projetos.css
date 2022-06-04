@@ -21,12 +21,18 @@ main{
   justify-content: space-between;
   align-items: center;
 
-  cursor: alias;
+  /* cursor: alias; */
 
   margin-bottom: 1rem;
+}
+
+.projeto h3{
+  font-size: 1.6rem;
 }
 
 .projeto p{
   position: absolute;
   left: 30%;
 }
+
+
