@@ -163,13 +163,14 @@
   padding: 1rem 0;
 }
 
-.ifba{
+.ifba, .ufba{
   display: flex;
-  margin-top: 2rem;
+  align-items: center;
+  margin-top: 3rem;
   
 }
 
-.image-campus{
+.image-campus-ifba{
   width: 37rem;
   height: 30rem;
   margin-left: 2rem;
@@ -179,31 +180,46 @@
   border-radius: .5rem;
 }
 
-.info-ifba{
+
+.image-campus-ufba{
+  width: 37rem;
+  height: 30rem;
+  margin-left: 2rem;
+  background-image: url('../assets/image/ufba-entrada.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: .5rem;
+}
+
+.info-ifba,
+.info-ufba{
   margin-left: 2rem;
   width: 65%;
 }
 
-.info-ifba h2 {
+.info-ifba h2, .info-ufba h2 {
   font-size: 1.8rem;
   display: inline-block;
 }
 
-.ifba-local {
+.ifba-local,
+.ufba-local {
   margin: 1rem 0;
   font-size: 1.4rem;
   color: #00d2df;
   font-weight: bold;
 
 }
-.descricao-ifba{
+.descricao-ifba,
+.descricao-ufba {
     filter: opacity(75%);
     line-height: 1.5;
     margin-bottom: 3rem;
     text-align: justify;
 }
 
-.container-button-ifba{
+.container-button-ifba,
+.container-button-ufba{
     margin-left: 3rem;
 }
 
