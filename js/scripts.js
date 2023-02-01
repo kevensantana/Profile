@@ -4,7 +4,7 @@ function typewrite(elemento) {
   const textArray = elemento.innerHTML.split('');
   elemento.innerHTML = '';
   textArray.forEach((letra,i) => {
-    setTimeout(() => elemento.innerHTML += letra, 155 * i);
+    setTimeout(() => elemento.innerHTML += letra, 195 * i);
   })
 }
 

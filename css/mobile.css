@@ -10,7 +10,19 @@
         width: 60rem;
     }
 
+    #mais {
+        display: none;
+    }
 
+    #verMais {
+        display: inline;
+    }
+
+
+    #leiaMais {
+        cursor: pointer;
+        color: #00d2df;
+    }
 }
 
 
@@ -60,7 +72,7 @@
         left: 0;
     }
 
-    .container-sobre {
+    .container-perfil {
         display: block;
         width: 85%;
     }
@@ -80,20 +92,7 @@
         
     }
 
-    #mais {
-        display: none;
-    }
-
-    #verMais {
-        display: inline;
-    }
-
-
-    #leiaMais {
-        cursor: pointer;
-        color: #00d2df;
-    }
-
+  
     .empresas{
         display: none;
     }
@@ -121,20 +120,22 @@
 
    
 
-   .ifba{
+   .ifba, .ufba{
        display: flex;
        flex-direction: column;
        justify-content: center;
        align-items: center;
    }
 
-   .image-campus {
+   .image-campus-ifba,
+   .image-campus-ufba {
        margin: auto;
        margin: 0;
        border-radius: 1rem;
    }
 
-   .info-ifba {
+   .info-ifba,
+   .info-ufba {
        margin: 0;
        width: 85%;
  
@@ -142,7 +143,8 @@
    }
 
 
-   .container-button-ifba {
+   .container-button-ifba,
+   .container-button-ufba {
         display: flex;
         justify-content: center;
         margin: auto;

@@ -8,11 +8,21 @@
 }
 
 .container-sobre{
+  width: 90%;
+  margin: auto;
+}
+
+.container-sobre h1{ 
+  margin-bottom: 3rem;
+
+}
+
+.container-perfil{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
-  width: 80%;
+  width: 90%;
 }
 
 .image-perfil img { 
@@ -20,7 +30,7 @@
   filter: opacity(75%);
   transition: 0.4s;
 
-  height: 300px; 
+  height: 350px; 
 }
 
 .image-perfil img:hover {
@@ -48,8 +58,11 @@
 .descricao-perfil{
   filter: opacity(75%);
   line-height: 1.5;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+  
 }
+
+.recuo { text-indent:2em }
 
 .vermais a {
   font-size: 20rem;
@@ -83,7 +96,7 @@
 .empresas{
   width: 500px;
   cursor: pointer;
-  margin: 2rem 1rem;
+  margin: 2rem 3rem 1rem 1rem;
 }
 
 .empresas ul {
@@ -171,7 +184,7 @@
 }
 
 .image-campus-ifba{
-  width: 37rem;
+  width: 45rem;
   height: 30rem;
   margin-left: 2rem;
   background-image: url('../assets/image/IFBA.jpg');
@@ -182,7 +195,7 @@
 
 
 .image-campus-ufba{
-  width: 37rem;
+  width: 45rem;
   height: 30rem;
   margin-left: 2rem;
   background-image: url('../assets/image/ufba-entrada.jpg');
@@ -219,7 +232,7 @@
 }
 
 .container-button-ifba,
-.container-button-ufba{
+.container-button-ufba {
     margin-left: 3rem;
 }
 
