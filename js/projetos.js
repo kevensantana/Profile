@@ -2,7 +2,8 @@
 const sectionCards = document.querySelector("div.cards");
 const card = document.querySelector("div.card");
 
-const projetos = [{
+const projetos = [
+  {
     title: "DS Delivery",
     autor: "Keven Santana",
     status: "Bootcamp",

@@ -246,30 +246,39 @@
           </div>
         </div>
 
-     </div>
+     </div>      
+    </section>
 
+    <section id="certificados">
       <div class="certificados">
-         <h1>Certificados</h1>
-          <div class="slide">
-            <div id="voltar" class="button-carousel">
-              <i class="fas fa-chevron-left"></i>
-            </div>
-            <div id="proximo" class="button-carousel">
-              <i class="fas fa-chevron-right"></i>
-            </div>
-              <div class="slides">
-                <div id="atual" class="slideImage  slideOne">
-                  <img src="assets/image/certificados/cert01.png" alt="cert01">
-                </div>
-              </div>
+        <h1>Certificados</h1>
+         <div class="slide">
+           <div id="voltar" class="button-carousel">
+             <i class="fas fa-chevron-left"></i>
+           </div>
+           <div id="proximo" class="button-carousel">
+             <i class="fas fa-chevron-right"></i>
+           </div>
+             <div class="slides">
+               <div id="atual" class="slideImage  slideOne">
+                 <img id="image1"  src="assets/image/certificados/cert01.png" alt="cert01" onclick="clique(this)">
+               </div>
+             </div>
 
-              <div class="balls">
-                <div class="slideAtual" id="0"></div>
-                <div id="1"></div>
-                <div id="2"></div>
-              </div>
-          </div>
+             <div class="balls">
+               <div class="slideAtual" id="0"></div>
+               <div id="1"></div>
+               <div id="2"></div>
+             </div>
+         </div>
+
+          <div id="janelaModal" class="modalVisual">
+            <span class="fechar">x</span>
+            <img class="modalConteudo" id="imgModal">
+            <div id="txtImg"></div>
       </div>
+    </div>
+     </div>
     </section>
 
     <section class="conhecimentos">
@@ -281,7 +290,12 @@
         </div>
     </section>
 
-    <!-- cursos -->
+    <!-- cursos  -->
+
+
+    <!-- Artigos publicados  -->
+
+    
 
     <section id="projetos">
       <div class="projetos-container">

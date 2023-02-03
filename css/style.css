@@ -1,23 +1,21 @@
-
-
 /* sobre  */
 
-#sobre{
-    background: var(--marcacao);
-    padding: 5rem 0 ;
+#sobre {
+  background: var(--marcacao);
+  padding: 8rem 0;
 }
 
-.container-sobre{
+.container-sobre {
   width: 90%;
   margin: auto;
 }
 
-.container-sobre h1{ 
+.container-sobre h1 {
   margin-bottom: 3rem;
 
 }
 
-.container-perfil{
+.container-perfil {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -25,12 +23,12 @@
   width: 90%;
 }
 
-.image-perfil img { 
+.image-perfil img {
   border-left: 5px solid #00d2df;
   filter: opacity(75%);
   transition: 0.4s;
 
-  height: 350px; 
+  height: 350px;
 }
 
 .image-perfil img:hover {
@@ -38,31 +36,33 @@
   border-left: 5px solid rgba(101, 24, 180, 1);
 }
 
-.descricao{
+.descricao {
   margin-left: 2rem;
   filter: opacity(100%);
 }
 
-.descricao h1{
+.descricao h1 {
   margin: 0;
-  
+
 }
 
 .descricao h2 {
   font-size: 1.4rem;
-  margin: 1rem 0 ;
+  margin: 1rem 0;
   filter: opacity(75%);
 
 }
 
-.descricao-perfil{
+.descricao-perfil {
   filter: opacity(75%);
   line-height: 1.5;
   margin-bottom: 1rem;
-  
+
 }
 
-.recuo { text-indent:2em }
+.recuo {
+  text-indent: 2em
+}
 
 .vermais a {
   font-size: 20rem;
@@ -77,12 +77,12 @@
 
 /* experiencia  */
 
-#experiencia{
+#experiencia {
 
   padding-top: 4rem;
 }
 
-.container-experiencia{
+.container-experiencia {
   width: 90%;
   margin: auto;
   padding: 1rem 0;
@@ -90,10 +90,10 @@
 
 .container-wrapper {
   display: flex;
-  
+
 }
 
-.empresas{
+.empresas {
   width: 500px;
   cursor: pointer;
   margin: 2rem 3rem 1rem 1rem;
@@ -121,17 +121,17 @@
   border-left: 2px solid #00d2df;
 }
 
-.caixas{
+.caixas {
   margin-right: 5%;
   padding: 2rem 0;
 }
 
-.caixas section{
+.caixas section {
   margin-top: 1rem;
 }
 
 
-.box-experiencia{
+.box-experiencia {
   border-bottom: 3px solid #252525;
   padding-bottom: 2rem;
   padding-top: 1rem;
@@ -139,11 +139,11 @@
   line-height: 2.5rem;
 }
 
-.box-experiencia h2{
-    font-size: 1.6rem;
+.box-experiencia h2 {
+  font-size: 1.6rem;
 }
 
-.ano{
+.ano {
   font-size: 1.2rem;
   float: right;
   font-weight: bold;
@@ -158,10 +158,10 @@
   font-size: 1.4rem;
   color: #00d2df;
   font-weight: bold;
-  
+
 }
 
-.exp-info p{
+.exp-info p {
   filter: opacity(75%);
   margin-bottom: 2rem;
 
@@ -170,20 +170,21 @@
 
 /* =================================== */
 
-.container-educacao{
+.container-educacao {
   width: 90%;
   margin: auto;
   padding: 1rem 0;
 }
 
-.ifba, .ufba{
+.ifba,
+.ufba {
   display: flex;
   align-items: center;
   margin-top: 3rem;
-  
+
 }
 
-.image-campus-ifba{
+.image-campus-ifba {
   width: 45rem;
   height: 30rem;
   margin-left: 2rem;
@@ -194,7 +195,7 @@
 }
 
 
-.image-campus-ufba{
+.image-campus-ufba {
   width: 45rem;
   height: 30rem;
   margin-left: 2rem;
@@ -205,12 +206,13 @@
 }
 
 .info-ifba,
-.info-ufba{
+.info-ufba {
   margin-left: 2rem;
   width: 65%;
 }
 
-.info-ifba h2, .info-ufba h2 {
+.info-ifba h2,
+.info-ufba h2 {
   font-size: 1.8rem;
   display: inline-block;
 }
@@ -223,28 +225,29 @@
   font-weight: bold;
 
 }
+
 .descricao-ifba,
 .descricao-ufba {
-    filter: opacity(75%);
-    line-height: 1.5;
-    margin-bottom: 3rem;
-    text-align: justify;
+  filter: opacity(75%);
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  text-align: justify;
 }
 
 .container-button-ifba,
 .container-button-ufba {
-    margin-left: 3rem;
+  margin-left: 3rem;
 }
 
 /* =============================  */
 
-.certificados{
+.certificados {
   width: 90%;
   margin: auto;
   margin-top: 3rem;
 }
 
-.slide{
+.slide {
 
   width: 100%;
   height: 250px;
@@ -255,7 +258,7 @@
   position: relative;
 }
 
-.slides{
+.slides {
   width: 100%;
   display: flex;
   overflow: hidden;
@@ -263,27 +266,27 @@
   transition: all 0.4s;
 }
 
-.slideImage{
+.slideImage {
   width: 100%;
   display: flex;
 }
 
-.slideImage img{
-  margin: 0 0.5rem;
+.slideImage img {
+  margin: 0 0.7rem;
 
   width: 280px;
   height: 180px;
   border-radius: 5px;
-  
+  cursor: pointer;
 }
 
-#atual{
+#atual {
   margin-left: 0;
   transition: all 2s;
- 
+
 }
 
-.button-carousel{
+.button-carousel {
   position: absolute;
   color: #fff;
   padding: 10px;
@@ -303,17 +306,17 @@
 }
 
 
-#voltar{
+#voltar {
   top: 40%;
   left: -4%;
 }
 
-#proximo{
+#proximo {
   top: 40%;
   right: -4%;
 }
 
-.balls{
+.balls {
   position: absolute;
   width: 100%;
   display: flex;
@@ -321,8 +324,8 @@
   align-items: flex-end;
   bottom: 3%;
 }
- 
-.balls div{
+
+.balls div {
   transition: all 0.5s;
   border: 3px solid #fff;
   padding: 6px;
@@ -331,18 +334,64 @@
   cursor: pointer;
 }
 
-.balls div:hover{
+.balls div:hover {
   background: #fff;
 }
 
-.slideAtual{
+.slideAtual {
   transition: all 0.5s;
   background: #fff;
 }
 
+.modalVisual {
+  /*Classe*/
+  display: none;
+  position: fixed;
+  z-index: 10;
+  padding-top: 100px;
+  left: 0;
+  top: 3rem;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+
+.modalConteudo {
+  margin: auto;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  display: block;
+}
+
+#txtImg {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.fechar {
+  position: absolute;
+  top: 15px;
+  right: 55px;
+  padding: 40px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+
 /* =============================  */
 
-.conhecimentos{
+.conhecimentos {
   width: 90%;
   margin: auto;
   padding-top: 3rem;
@@ -350,48 +399,46 @@
   display: block;
 }
 
-.container-one{
-   text-align: center;
-   margin-top: 2rem;
+.container-one {
+  text-align: center;
+  margin-top: 2rem;
 
-   display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-   grid-gap: 25px 25px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-gap: 25px 25px;
 }
 
-.ling img{
+.ling img {
   width: 5rem;
   height: 5rem;
-
   transition: all 0.3s ease 0s;
 }
 
-.ling:hover{
+.ling img:hover {
   cursor: pointer;
   transform: translateY(-7px);
 }
 
 
-
 /* ============================================= */
 
 #contato {
-   width: 90%;
-   margin: auto;
-   margin-top: 6rem;
-  
-   display: block;
+  width: 90%;
+  margin: auto;
+  margin-top: 6rem;
+
+  display: block;
 
 
 }
 
-.container-form{
+.container-form {
   display: flex;
   align-items: center;
   gap: 10%;
 }
 
-.img-form-right{
+.img-form-right {
   width: 50%;
 }
 
@@ -413,7 +460,7 @@
   padding: 3rem 0;
   color: white;
   /* background: #252525; */
-  border: 4px solid #252525 ;
+  border: 4px solid #252525;
 }
 
 .form-contato h2 {
@@ -434,12 +481,13 @@
   justify-content: center;
   width: 80%;
   margin: auto;
-  
+
   margin-top: 2.5rem;
 
 }
 
-.form-input input, textarea {
+.form-input input,
+textarea {
   background-color: white;
 
   color: black;
@@ -461,36 +509,36 @@
 
 /* ========================================== */
 
-footer{ 
-    margin: auto;
-    margin-top: 4rem;
-    padding-top: 2rem;
-    height: 70px;
-    background: var(--marcacao);
+footer {
+  margin: auto;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  height: 70px;
+  background: var(--marcacao);
 }
 
-.contato-bs{
+.contato-bs {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 10rem;
 }
 
-.redes img{
+.redes img {
   width: 4rem;
   height: 4rem;
   cursor: pointer;
 }
 
-.redes{
-   transition: all 0.3s ease 0s;
+.redes {
+  transition: all 0.3s ease 0s;
 }
 
 .redes img:hover {
   transform: translateY(-5px);
 }
 
-.contato-bs span{
+.contato-bs span {
   color: #00d2df;
   font-weight: bold;
   letter-spacing: 1.5px;
