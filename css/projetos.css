@@ -14,7 +14,12 @@ main{
   width: 90%;
   margin: auto;
   padding-top: 1rem;
+}
 
+.boxProjetos{
+  width: 40px;
+  height: 40px;
+  background-color: blue;
 }
 
 
@@ -39,5 +44,3 @@ main{
   position: absolute;
   left: 30%;
 }
-
-

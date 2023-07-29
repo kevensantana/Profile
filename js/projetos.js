@@ -8,7 +8,7 @@ const projetos = [
     autor: "Keven Santana",
     status: "Bootcamp",
     thumb: "assets/image/projetos/design.jpeg",
-    link: "https://github.com/kevensantana/DsDelivery",
+    link: "3",
     projeto_id: "01"
   },
   {
@@ -67,3 +67,19 @@ projetos.map(projeto => {
 });
 
 card.remove();
+
+
+document.addEventListener('DOMContentLoaded', function () {
+  const btnAddDiv = document.getElementById('btnAddDiv');
+  const container = document.getElementById('container');
+
+  btnAddDiv.addEventListener('click', function () {
+      // Crie uma nova div
+      const newDiv = document.createElement('div');
+      newDiv.classList.add('div-to-add');
+      newDiv.textContent = 'Nova Div';
+
+      // Adicione a nova div ao container
+      container.appendChild(newDiv);
+  });
+});
