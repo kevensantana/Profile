@@ -184,22 +184,22 @@
 
 }
 
-.image-campus-ifba {
+.image-campus-ifba img {
   width: 45rem;
   height: 30rem;
   margin-left: 2rem;
-  background-image: url('../assets/image/IFBA.jpg');
+  /* background-image: url('../assets/image/IFBA.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: .5rem;
 }
 
 
-.image-campus-ufba {
+.image-campus-ufba img{
   width: 45rem;
   height: 30rem;
   margin-left: 2rem;
-  background-image: url('../assets/image/ufba-entrada.jpg');
+  /* background-image: url('../assets/image/ufba-entrada.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: .5rem;
